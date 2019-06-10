@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/4427a5e012.js"></script>
     <?php wp_head(); ?>
 <body>
     
@@ -41,16 +43,16 @@
         </div><!-- Contenedor -->
     </header>
 
-    <nav class="menu-sitio">
-        <div class="contenedor navegacion">
-            <?php 
-                $args = array(
-                    'theme_location' => 'header-menu', //que menu quieres que imprima
-                    'container' => 'nav',//que etiquetas quieres que use
-                    'container_class' => 'menu-sitio'//que clase quieres que tenga
-                );
-                wp_nav_menu($args);//imprime el menu en la plantalla
-            
-            ?>
-        </div>
-    </nav>
+    
+    <div class="contenedor navegacion">
+        <?php 
+            $args = array(
+                'theme_location' => 'header-menu', //que menu quieres que imprima
+                'container' => 'nav',//que etiquetas quieres que use
+                'container_class' => 'menu-sitio'//que clase quieres que tenga
+            );
+            wp_nav_menu($args);//imprime el menu en la plantalla
+        
+        ?>
+    </div>
+ 
