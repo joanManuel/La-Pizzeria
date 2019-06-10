@@ -122,6 +122,14 @@ nav.sociales ul{
     }
 
     /** NAVEGACION PRINCIPAL **/
+    nav.menu-sitio{
+        display: none;
+    }
+    @media only screen and (min-width: 768px){
+        nav.menu-sitio{
+            display: block;
+        }
+    }
     nav.menu-sitio ul{
         list-style: none;
         display: table;
@@ -148,5 +156,28 @@ nav.sociales ul{
         nav.menu-sitio ul li{
             display:  table-cell;
             width: 1%;
+        }
+    }
+
+    /** RESPONSIVE MENU **/
+    
+
+    @media only screen and (max-width: 767px){
+        .mobile-menu a{
+            height: 40px;
+            background-color: #a61206;
+            width: 100%;
+            color: white!important;
+            display: block;
+            text-align: center;
+            line-height: 40px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 20px;
+        }
+    }
+    @media only screen and (min-width: 768px){
+        .mobile-menu a{
+            display: none;
         }
     }

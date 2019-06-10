@@ -42,17 +42,21 @@
             </div>
         </div><!-- Contenedor -->
     </header>
-
+     <div class="menu-principal">
+         <div class="mobile-menu">
+             <a href="" class="mobile"><i class="fas fa-bars"></i>Menu</a>
+         </div>
+         <div class="contenedor navegacion">
+             <?php 
+                 $args = array(
+                     'theme_location' => 'header-menu', //que menu quieres que imprima
+                     'container' => 'nav',//que etiquetas quieres que use
+                     'container_class' => 'menu-sitio'//que clase quieres que tenga
+                 );
+                 wp_nav_menu($args);//imprime el menu en la plantalla
+             
+             ?>
+         </div>
+     </div>           
     
-    <div class="contenedor navegacion">
-        <?php 
-            $args = array(
-                'theme_location' => 'header-menu', //que menu quieres que imprima
-                'container' => 'nav',//que etiquetas quieres que use
-                'container_class' => 'menu-sitio'//que clase quieres que tenga
-            );
-            wp_nav_menu($args);//imprime el menu en la plantalla
-        
-        ?>
-    </div>
  
