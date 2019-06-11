@@ -1,13 +1,18 @@
 <?php get_header() ?>
 
     <?php while(have_posts()): the_post(); ?>
-
-    <?php the_post_thumbnail(); ?>
-
-    <?php the_title('<h1>','</h1>'); ?>
+    <?php  ?>
+    <div class="hero" style="background-image:url(<?php echo get_the_post_thumbnail_url(); ?>);">
+        <div class="contenido-hero">
+            <div class="texto-hero">
+                
+                <?php the_title('<h1>','</h1>'); ?>
+            </div>
+        </div>
+    </div>
 
     <div class="principal contenedor">
-        <main>
+        <main class="texto-centrado contenido-paginas">
             <?php the_content(); ?>
         </main>
     </div>
