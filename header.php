@@ -44,7 +44,7 @@
     </header>
      <div class="menu-principal">
          <div class="mobile-menu">
-             <a href="" class="mobile"><i class="fas fa-bars"></i>Menu</a>
+             <a href="#" class="mobile"><i class="fas fa-bars"></i> Menu</a>
          </div>
          <div class="contenedor navegacion">
              <?php 

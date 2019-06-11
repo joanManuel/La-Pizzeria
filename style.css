@@ -175,6 +175,9 @@ nav.sociales ul{
             text-transform: uppercase;
             font-size: 20px;
         }
+        nav.menu-sitio ul li.current_page_item a{
+            border-bottom: none;
+        }
     }
     @media only screen and (min-width: 768px){
         .mobile-menu a{
