@@ -1,4 +1,9 @@
 <?php 
+function lapizzeria_setup(){
+    add_theme_support('post-thumbnails');//para habilitar las imagenes destacadas
+}
+add_action('after_setup_theme','lapizzeria_setup');
+
 function lapizzeria_styles(){
      
     //registrar los estilos
