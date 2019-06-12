@@ -1,6 +1,9 @@
 <?php 
 function lapizzeria_setup(){
     add_theme_support('post-thumbnails');//para habilitar las imagenes destacadas
+
+    add_image_size('nosotros',437,291, true);//para agregar medida en wordpress
+
 }
 add_action('after_setup_theme','lapizzeria_setup');
 
